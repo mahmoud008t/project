@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Veloura - الصفحة الرئيسية</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#E6B8B8",
+                        "background-light": "#FDF7F7",
+                        "background-dark": "#1A1A1A",
+                        "text-light": "#333333",
+                        "text-dark": "#F0F0F0",
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#2C2C2C",
+                    },
+                    fontFamily: {
+                        display: ["Playfair Display", "serif"],
+                        body: ["Cairo", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "1rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .veloura-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #C88A8A;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="min-h-screen flex flex-col">
+<header class="bg-white/80 dark:bg-black/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center">
+<button class="text-gray-500 dark:text-gray-400 focus:outline-none focus:text-gray-700 dark:focus:text-gray-200" id="menu-btn">
+<span class="material-icons-outlined">menu</span>
+</button>
+</div>
+<div class="flex items-center space-x-2">
+<span class="veloura-text" style="font-size: 1.75rem;">Veloura</span>
+<svg class="h-6 w-6 text-[#C88A8A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M15.23 18.23s-2.09-.76-2.09-2.23v-1.77c0-1.47 2.09-2.23 2.09-2.23m-4.46 6.23s2.09-.76 2.09-2.23v-1.77c0-1.47-2.09-2.23-2.09-2.23m-4.14-1.35c1.88-1.12 3.05-3.26 3.05-5.65 0-3.59-2.82-6.5-6.28-6.5S2.63 4.21 2.63 7.8c0 2.39 1.17 4.53 3.05 5.65m12.64 0c1.88-1.12 3.05-3.26 3.05-5.65 0-3.59-2.82-6.5-6.28-6.5s-6.28 2.91-6.28 6.5c0 2.39 1.17 4.53 3.05 5.65" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="flex items-center">
+<a class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200" href="#">
+<span class="material-icons-outlined">shopping_bag</span>
+</a>
+</div>
+</div>
+</div>
+</header>
+<div class="fixed inset-y-0 right-0 transform translate-x-full transition-transform duration-300 ease-in-out bg-background-light dark:bg-background-dark w-64 z-50 shadow-lg" id="sidebar">
+<div class="p-4 flex justify-between items-center border-b border-gray-200 dark:border-gray-700">
+<h2 class="text-lg font-bold">القائمة</h2>
+<button class="text-gray-500 dark:text-gray-400 focus:outline-none" id="close-btn">
+<span class="material-icons-outlined">close</span>
+</button>
+</div>
+<nav class="mt-4">
+<a class="block px-4 py-3 text-text-light dark:text-text-dark hover:bg-gray-200 dark:hover:bg-gray-800" href="#">الرئيسية</a>
+<a class="block px-4 py-3 text-text-light dark:text-text-dark hover:bg-gray-200 dark:hover:bg-gray-800" href="#">المجموعات</a>
+
+<a class="block px-4 py-3 text-text-light dark:text-text-dark hover:bg-gray-200 dark:hover:bg-gray-800" href="#">وصل حديثا</a>
+<a class="block px-4 py-3 text-text-light dark:text-text-dark hover:bg-gray-200 dark:hover:bg-gray-800" href="#">تخفيضات</a>
+<a class="block px-4 py-3 text-text-light dark:text-text-dark hover:bg-gray-200 dark:hover:bg-gray-800" href="#">تواصل معنا</a>
+</nav>
+</div>
+<div class="fixed inset-0 bg-black/50 z-40 hidden" id="overlay"></div>
+<main class="flex-grow">
+<section class="relative h-[60vh] bg-cover bg-center" style="background-image: url('image-placeholder.png')">
+<div class="absolute inset-0 bg-black/30"></div>
+<div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+<h1 style="font: bolder;" class="text-4xl md:text-5xl font-display mb-4">أناقة تتجاوز الزمن</h1>
+<p class="text-lg md:text-xl font-body mb-8 max-w-2xl">اكتشفي تشكيلتنا الحصرية من الأزياء التي تجمع بين التصميم العصري والجودة الفائقة.</p>
+<a class="bg-primary text-white font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-colors duration-300" href="http://127.0.0.1:5500/code.html#">
+                        تسوقي الآن
+                    </a>
+</div>
+</section>
+<section class="py-16 bg-background-light dark:bg-background-dark">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-center mb-8 text-text-light dark:text-text-dark">تصفح حسب الفئة</h2>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+<div class="group relative overflow-hidden rounded-lg">
+<img alt="فساتين أنيقة" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQqQDLa34vviXr_hocAzyzZqQs1Shz8n9jS3aUGc4UCEdkYy6fqZdyZ2Z235_noJtOiVdGKWsjkOfUpUOkAHnqLnXfRYpCdePD-5dic1cjr1RJQirprK1DsnQazXBGe_7S2yfHXRWSpXMLRb55SYQ5HjgpPoKYKG7DQ77LmA1nRSaZVVMqlZI0ggQE94YIVWhz5kmDyxLvr2Jb1z2rwegHn7Cmpa6nkJ8HEWCnggxzABE9DU8SPVA6MSNtcFFc2ElDvzbmOtOdq1oG"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<h3 class="text-white text-xl font-bold">فساتين</h3>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg">
+<img alt="بلوزات عصرية" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1eDTc_Gfp_8Hajrgh_DOheDHmmlXhj1QaII86YTrBalCLOBfv599tPm66lEvBNQBbiLzzljApZgXfkuxO1mHexfwpQjV24sLZg4X0YrTijqgmWSkjvBt-4U47rjpiNN3bY5aQPfqFewKRG6mRer8UFe0ei3l9aLrnl93MJS8w4nQRzn0Kbg8_YUDoA5syIZkxvSZDx77o8ouAf5wy5pSRK4qWQjPu3hpSc-ceLYBDVHnfSHIMbd2kxs960tEjzRjAdlyNHF5XsE-F"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<h3 class="text-white text-xl font-bold">بلوزات</h3>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg">
+<img alt="بناطيل مريحة" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwzxomchLuegckOnkTYQq5VR2KYrEAbGo7vKvuruTEjJfwPxPRbRnpBkEO97-8H1NyI64JseWuuRsXSYPOq-UR1Rc6oIW_qId2rLAM2rlum04Qn3H0RvlD3B5NxV_mZ_EczSuEmzU7iEfYVsgW-OLzyucWzjHI-xDzS5NGVxfyjuGAj_dgxJDdaKafU1serP5qd83RRWtJgzA9wxpjo-tFgM70lV5Z9y4s2zARfwJ9aSC9ErHS5_EEna5OjUHItgbVqbh1I8HLNH2f"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<h3 class="text-white text-xl font-bold">بناطيل</h3>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg">
+<img alt="إكسسوارات متألقة" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9FIj96EdP72OijWh9YSPugYWYJeATx6Qfp6nK3Fieqm6Opn5LG9IHSExpmrCt9K8QViQ1eu-VGhDsVzU1skA1BgLb57lBS3MirA4A7GMdEeoYoBcIMj0Gis46L5T2KT3XF1BQtdvOZ-Tfor8IMz0min-B0ZBJui_E-ZwuJhnEgaFcMhA_6soGMhCmGJ74hfDCWcKMwa_if0ePd_L9zFqt9WsMVJKMtgV_E62_eMAPDiwY8f3idO5nJ0WjxKanMA0nEh3309kasOav"/>
+
+Mahmoud Wael, [9/21/2025 4:25 PM]
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<h3 class="text-white text-xl font-bold">إكسسوارات</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 bg-gray-50 dark:bg-gray-900">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-center mb-8 text-text-light dark:text-text-dark">وصل حديثًا</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="bg-card-light dark:bg-card-dark rounded-lg shadow-md overflow-hidden group">
+<div class="relative">
+<img alt="بجامه شتوي ريب" class="w-full h-56 object-cover" src="photo/photo_1_2025-09-21_00-45-49.jpg" />
+<div class="absolute top-2 right-2 bg-primary text-white text-xs font-bold px-2 py-1 rounded">جديد</div>
+</div>
+<div class="p-4">
+<h3 class="font-bold text-lg mb-1 text-text-light dark:text-text-dark"> بجامه خريفي ريب  </h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm mb-2">مجموعة الخريف</p>
+<div class="flex items-center justify-between">
+<span class="font-bold text-primary text-lg">350 ج.م</span>
+<button class="text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">
+<span class="material-icons-outlined">favorite_border</span>
+</button>
+</div>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-lg shadow-md overflow-hidden group">
+<div class="relative">
+<img alt="بلوزة بيضاء بأكمام" class="w-full h-56 object-cover" src="photo/photo_2_2025-09-21_00-45-49.jpg"/>
+</div>
+<div class="p-4">
+<h3 class="font-bold text-lg mb-1 text-text-light dark:text-text-dark">بلوزة خريفي </h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm mb-2">أساسيات يومية</p>
+<div class="flex items-center justify-between">
+<span class="font-bold text-primary text-lg">180 ج.م</span>
+<button class="text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">
+<span class="material-icons-outlined">favorite_border</span>
+</button>
+</div>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-lg shadow-md overflow-hidden group">
+<div class="relative">
+<img alt="بنطال جينز أزرق" class="w-full h-56 object-cover" src="photo/photo_3_2025-09-21_00-45-49.jpg"/>
+</div>
+<div class="p-4">
+<h3 class="font-bold text-lg mb-1 text-text-light dark:text-text-dark">بلوزة ريب </h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm mb-2">مجموعة الدنيم</p>
+<div class="flex items-center justify-between">
+<span class="font-bold text-primary text-lg">250 ج.م</span>
+<button class="text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">
+<span class="material-icons-outlined">favorite_border</span>
+</button>
+</div>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-lg shadow-md overflow-hidden group">
+<div class="relative">
+<img alt="حقيبة يد جلدية" class="w-full h-56 object-cover" src="photo/photo_4_2025-09-21_00-45-49.jpg"/>
+<div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">تخفيض</div>
+</div>
+<div class="p-4">
+<h3 class="font-bold text-lg mb-1 text-text-light dark:text-text-dark">بلوزة ستيتش</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm mb-2">إكسسوارات فاخرة</p>
+<div class="flex items-center justify-between">
+<span class="font-bold text-primary text-lg">220 ر.س</span>
+<span class="text-sm text-gray-500 line-through">290 ج.م</span>
+<button class="text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">
+<span class="material-icons-outlined">favorite_border</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<a class="border border-primary text-primary font-bold py-3 px-8 rounded-full hover:bg-primary hover:text-white transition-colors duration-300" href="#">
+                            عرض كل المنتجات
+                        </a>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-gray-100 dark:bg-gray-800 text-text-light dark:text-text-dark">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<h3 class="text-lg font-bold mb-4">Veloura</h3>
+<p class="text-sm">وجهتك الأولى للأزياء العصرية والأنيقة. نقدم لكِ أحدث التصاميم بجودة لا تضاهى.</p>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-4">روابط سريعة</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-primary" href="#">معلومات عنا</a></li>
+<li><a class="hover:text-primary" href="#">سياسة الخصوصية</a></li>
+<li><a class="hover:text-primary" href="#">الشروط والأحكام</a></li>
+<li><a class="hover:text-primary" href="#">الأسئلة الشائعة</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-4">تواصل معنا</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-primary" href="#">support@veloura.com</a></li>
+<li><a class="hover:text-primary" href="#">+966 12 345 6789</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-4">تابعنا</h3>
+<div class="flex space-x-4">
+<a class="text-gray-500 hover:text-primary" href="#"><svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg></a>
+<a class="text-gray-500 hover:text-primary" href="#"><svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg></a>
+<a class="text-gray-500 hover:text-primary" href="#"><svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.148 2 12.315 2zm-1.002 3.633c-2.396.042-4.33 1.983-4.33 4.365s1.934 4.323 4.33 4.365c2.396-.042 4.33-1.983 4.33-4.365s-1.934-4.323-4.33-4.365zm0 7.243c-1.583 0-2.867-1.284-2.867-2.867s1.284-2.867 2.867-2.867 2.867 1.284 2.867 2.867-1.284 2.867-2.867 2.867zm5.539-7.183a1.323 1.323 0 100-2.645 1.323 1.323 0 000 2.645z" fill-rule="evenodd"></path></svg></a>
+</div>
+</div>
+</div>
+<div class="mt-8 border-t border-gray-200 dark:border-gray-700 pt-8 text-center text-sm">
+<p>© 2025 Veloura. كل الحقوق محفوظة.</p>
+</div>
+</div>
+</footer>
+</div>
+<script>
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('overlay');
+        menuBtn.addEventListener('click', () => {
+            sidebar.classList.remove('translate-x-full');
+
+overlay.classList.remove('hidden');
+        });
+        closeBtn.addEventListener('click', () => {
+            sidebar.classList.add('translate-x-full');
+            overlay.classList.add('hidden');
+        });
+        overlay.addEventListener('click', () => {
+            sidebar.classList.add('translate-x-full');
+            overlay.classList.add('hidden');
+        });
+    </script>
+
+</body></html>
